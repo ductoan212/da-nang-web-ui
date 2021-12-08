@@ -11,6 +11,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="./images/logo-dn.png" />
     <style>
       /* Style for scrollbar */
       /* width */
@@ -69,18 +70,25 @@
         background-color: #00111998 !important;
       }
       .card {
-        border: 0px solid #001119;
+        /* border: 2px solid #001119; */
         padding: 2rem;
         margin: 1rem;
         max-width: 250px;
-        border: 2px solid #00111911;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 2px #ffffff;
       }
 
       .card:hover {
         /* position: absolute; */
         cursor: pointer;
-        border: 2px solid #001119;
+        /* border: 1px solid #012535; */
+        box-shadow: 0px 0px 10px #ffffff;
         /* background-color: #00111998; */
+      }
+
+      .card-img-top {
+        width: 50%;
+        margin: auto;
       }
     </style>
   </head>
@@ -123,8 +131,8 @@
 
                 <li class="nav-item">
                   <a
-                    class="nav-link disabled"
-                    href="#"
+                    class="nav-link"
+                    href="/appointment.html"
                     tabindex="-1"
                     aria-disabled="true"
                     >Đặt lịch hẹn</a
@@ -133,8 +141,8 @@
 
                 <li class="nav-item">
                   <a
-                    class="nav-link disabled"
-                    href="#"
+                    class="nav-link"
+                    href="/event.html"
                     tabindex="-1"
                     aria-disabled="true"
                     >Sự kiện</a
@@ -191,7 +199,7 @@
         </div>
 
         <div class="col-sm-12 p-5 pb-0 text-center">
-          <h1>Đà Nẵng?</h1>
+          <h1 class="mb-5">Đà Nẵng?</h1>
           <p class="text-justify pl-5 pr-5" style="font-size: 1.2rem">
             <i>Thành phố Đà Nẵng</i> là thành phố tổng hợp đa ngành, đa lĩnh
             vực; trung tâm chính trị - kinh tế - xã hội với vai trò là trung tâm
@@ -227,7 +235,15 @@
           ></iframe>
         </div>
 
-        <div class="col-sm-12 p-5 text-center">
+        <div
+          class="col-sm-12 p-5 text-center"
+          style="
+            background-image: url('./images/da-nang/da-nang.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
           <div class="row">
             <div
               class="col-lg-4 d-flex justify-content-center align-items-center"
@@ -281,11 +297,15 @@
         </div>
 
         <div class="col-sm-12 p-5 text-center" style="font-size: 1.2rem">
+          <h1>Thông tin thêm về Đà Nẵng</h1>
           <div class="row p-5 align-items-center">
-            <div class="col-md-6">
+            <div
+              class="col-md-6"
+              style="height: 500px; width: 100%; overflow: hidden"
+            >
               <img
                 src="./images/da-nang/toa-nha-dn-2.jpg"
-                style="height: 500px; width: 500px; object-fit: cover"
+                style="height: 500px; width: 100%; object-fit: cover"
               />
             </div>
             <div class="col-md-6">
@@ -319,17 +339,35 @@
               ấn văn hoá của người Đà Nẵng hôm nay gửi lại muôn đời con cháu mai
               sau.
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <img
                 src="./images/da-nang/cau-rong.jpg"
                 style="height: 500px; width: 500px; object-fit: cover"
+              />
+            </div> -->
+            <div
+              class="col-md-6"
+              style="height: 500px; width: 100%; overflow: hidden"
+            >
+              <img
+                src="./images/da-nang/cau-rong.jpg"
+                style="height: 500px; width: 100%; object-fit: cover"
               />
             </div>
           </div>
         </div>
 
+        <hr
+          style="
+            background-color: #001119;
+            height: 2px;
+            width: 75%;
+            margin: auto;
+          "
+        />
+
         <div class="col-sm-12 p-5 text-center">
-          <h1 class="p-5">Một số hình ảnh khác của Đà Nẵng</h1>
+          <h1 class="mb-5">Một số hình ảnh khác của Đà Nẵng</h1>
           <img
             src="./images/da-nang/da-nang.jpg"
             class="m-1"
